@@ -222,7 +222,7 @@ QUIC은 TCP를 사용하지 않기 때문에 통신을 시작할 때 번거로�
 - 이는 전송한 패킷이 손실되었다면 수신 측에서 에러를 검출하고 수정하는 방식 이며 열악한 네트워크 환경에서도 낮은 패킷 손실률을 자랑합니다.
 
 ![](https://velog.velcdn.com/images/noahshin__11/post/bac076b6-64f4-4519-afb6-5afc21e856c7/image.png)
-
+d
 
 
 
