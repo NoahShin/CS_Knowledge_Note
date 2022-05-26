@@ -288,7 +288,35 @@ C, C++로 만들어졌으며 MylSAM 인덱스 압축 기술, B-트리 기반의 
 
 
 
+### PostgreSQL
+MySQL 다음으로 잘 나감
+![](https://velog.velcdn.com/images/noahshin__11/post/b16c2d59-7395-481c-bd8d-f995dc096806/image.png)
+디스크 조각이 차지하는 영역을 회수할 수 있는 장치인 VACUUM이 특징.
+최대 테이블의 크기는 32TB이며 SQL뿐만 아니라 JSON을 이용해서 데이터에 접근할 수 있습니다. 
+지정 시간에 복구하는 기능, 로깅, 접근 제어, 중첩된 트랜잭션, 백업 등을 할 수 있습니다.
 
+# 4.4.2 NoSQL 디비
+Not Only SQL 슬로건에서 생겨난 디비
+SQL 을 사용하지 않는 디비
+MongoDB 와 redis 가 대표적
+![](https://velog.velcdn.com/images/noahshin__11/post/4bdc4919-434b-4263-8257-cef6c77e178f/image.png)
+MongoDB는 JSON을 통해 데이터에 접근할 수 있고, Binary JSON 형태(BSON)로 데이터가 저장되며 
+와이어드타이거 엔진이 기본 스토리지 엔진으로 장착된 키-값 데이터 모델에서 확장된 도큐먼트 기반의 데이터베이스. 
+확장성이 뛰어나며 빅데이터를 저장할 때 성능이 좋고
+고가용성과 샤딩, 레플리카셋을 지원. 
+또한, 스키마를 정해 놓지 않고 데이터를 삽입할 수 있기 때문에 다양한 도메인의 데이터베이스를 기반으로 분석 하거나 로깅 등을 구현할 때 강점을 보입니다.
+
+또한, MongoDB는 도큐먼트를 생성할 때마다 다른 컬렉션에서 중복된 값을 지니기 힘든 유니크한 값인 Objection 생성됩니다.
+![](https://velog.velcdn.com/images/noahshin__11/post/e6112761-dda5-46b6-af69-9545a14d2a88/image.png)
+
+## redis 
+
+인메모리 디비이자 키-값 데이터 모델 기반의 디비
+
+![](https://velog.velcdn.com/images/noahshin__11/post/2b86149f-8406-4099-aaef-20868e18a2f0/image.png)
+기본적인 데이터 타입은 문자열(string)이며 최대 512MB까지 저장할 수 있습니다. 
+이외에도 셋(set), 해시 (hash) 등을 지원합니다.
+pub/sub 기능을 통해 채팅 시스템, 다른 데이터베이스 앞단에 두어 사용하는 캐싱 계층, 단순한 키-값이 필요한 세션 정보 관리, 정렬된 셋(sorted set) 자료 구조를 이용한 실시간 순위표 서비스에 사용합니다.
 
 
 
